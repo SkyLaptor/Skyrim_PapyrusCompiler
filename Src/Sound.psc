@@ -13,3 +13,7 @@ Function StopInstance(int aiPlaybackInstance) native global
 ; Set the volume of a given playback instance of a sound. Clamped between 0 and 1.
 Function SetInstanceVolume(int aiPlaybackInstance, float afVolume) native global
 
+
+
+; SKSE additions built 2015-05-24 00:46:48.937000 UTC
+SoundDescriptor Function GetDescriptor() native

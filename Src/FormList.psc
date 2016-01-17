@@ -21,3 +21,11 @@ Function RemoveAddedForm(Form apForm) native
 
 ; Removes all script added forms from this form list
 Function Revert() native
+
+
+; SKSE additions built 2015-05-24 00:46:48.937000 UTC
+; Returns a Form array of this list (Invalid entries will be None)
+Form[] Function ToArray() native
+
+; Adds an Array of Forms to this list
+Function AddForms(Form[] forms) native

@@ -33,3 +33,13 @@ Function SetFogPower(float afPower) native
 
 ; Sets this cell as public or private
 Function SetPublic(bool abPublic = true) native
+
+; SKSE additions built 2015-05-24 00:46:48.937000 UTC
+; Returns the number of refs in the cell
+int Function GetNumRefs(int formTypeFilter = 0) native
+
+; returns the ref at the specified index
+ObjectReference Function GetNthRef(int n, int formTypeFilter = 0) native
+
+; Returns the water level of the cell (-2147483648 if no water)
+float Function GetWaterLevel() native
